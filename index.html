@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compilador Básico</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Compilador Básico</h1>
+        <textarea id="source-code" placeholder="Introduce tu código aquí..."></textarea><br>
+        <button onclick="compileCode()">Compilar</button>
+
+        <h2>Resultados:</h2>
+        <div>
+            <h3>Tokens:</h3>
+            <pre id="tokens"></pre>
+        </div>
+        <div>
+            <h3>AST Parseado:</h3>
+            <pre id="ast-parsed"></pre>
+        </div>
+        <div>
+            <h3>AST Transformado:</h3>
+            <pre id="ast-transformed"></pre>
+        </div>
+        <div>
+            <h3>Código Generado:</h3>
+            <pre id="generated-code"></pre>
+        </div>
+    </div>
+
+    <script src="compiler.js"></script>
+</body>
+</html>
